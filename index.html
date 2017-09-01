@@ -1,2 +1,118 @@
-<script src='build/main.bundle.js'></script>
-hello world
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+
+<meta charset="utf-8">
+<script type="text/javascript" src="index.js"></script>
+
+<title>keyboard</title>
+
+<style media="screen">
+body {
+    background-color:#ffffff;
+ }
+#keyboard {
+    
+    display:inline-block;
+    padding:100px 100px;
+    border:3px #ffb3b3;
+    background-color:#cce6ff;
+    text-align:center;
+    box-shadow:4px 4px 4px #999;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+ }
+#keyboard div {
+    margin:10px 0;
+ }
+
+#keyboard label {
+    margin-top:20px;
+    font-family:serif;
+    text-decoration:underline;
+    color:#ff5050;
+
+ }
+#keyboard input {
+	color:#ffffff;
+    background-color:#ff5050;
+	width:40px; 
+	height:40px;
+ }
+#keyboard input[type="text"] {
+    margin-top:20px;
+    border-radius:8px;
+    box-shadow:none;
+ }
+</style>
+</head>
+<body>
+
+<div id="keyboard">
+
+    <label>VIRSUAL KEYBOARD</label><br>
+
+    <input id="text" type="text" style="width:350px; height:40px; background-color:#ffcccc;" cols="60" readonly="readonly">
+
+<div id="btn1">
+ <input type="button" value="1">
+ <input type="button" value="2">
+ <input type="button" value="3">
+ <input type="button" value="4">
+ <input type="button" value="5">
+ <input type="button" value="6">
+ <input type="button" value="7">
+ <input type="button" value="8">
+ <input type="button" value="9">
+ <input type="button" value="0">
+ <button type="button" style="width:150px; height:40px; background-color:#ff8080; color:#ffffff;" onclick="clicked('DEL');">Backspace</button>
+ 
+</div>
+<div>
+    <input type="button" value="Q">
+    <input type="button" value="W">
+    <input type="button" value="E">
+    <input type="button" value="R">
+    <input type="button" value="T">
+    <input type="button" value="Y">
+    <input type="button" value="U">
+    <input type="button" value="I">
+    <input type="button" value="O">
+    <input type="button" value="P">
+</div>
+<div>
+    <input type="button" value="A">
+    <input type="button" value="S">
+    <input type="button" value="D">
+    <input type="button" value="F">
+    <input type="button" value="G">
+    <input type="button" value="H">
+    <input type="button" value="J">
+    <input type="button" value="K">
+    <input type="button" value="L">
+</div>
+<div>
+    <input type="button" value="Z">
+    <input type="button" value="X">
+    <input type="button" value="C">
+    <input type="button" value="V">
+    <input type="button" value="B">
+    <input type="button" value="N">
+    <input type="button" value="M">
+    <br>
+	<br>
+    <button type="button" style="width:250px; height:40px; background-color:#ff8080; color:#ffffff;" onclick="clicked(' ');">Space</button>
+    
+</div>
+<div>
+ <input id="clear" style="width:200px;" type="reset" value="clear">
+</div>
+
+
+</div><!-- end #keyboard -->
+
+</body>
+</html>
